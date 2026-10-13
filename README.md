@@ -3,7 +3,7 @@
      each components/<Name>/preview.html opens in a browser on its own.
 
      Use in an app (pin a tag; bump it to take updates):
-       npm install github:winsomemundy/design-system#v1.2.0
+       npm install github:winsomemundy/design-system#v1.3.0
        import '@winsomemundy/design-system/tokens.css'
        import '@winsomemundy/design-system/bundle.css'
      and load the fonts from Google Fonts (link below, under Type). -->
@@ -61,6 +61,7 @@ Every color in the system has a hex code above. Use the 8-digit hex for `ink-gla
 
 ## Layout and spacing
 
+- The home page opens with the Hero, then the Values Strip, then a short summary paragraph.
 - One centered column, `content-max` wide, with `gutter` side padding at every width. Sections are separated by a `line` rule and padded `section-y` (`section-y-sm` on phones).
 - Every section opens with an Eyebrow, a `heading-lg` heading and an optional `muted` subline, then its content.
 - Cards sit in grids with `grid-gap`; text columns sit `column-gap` apart. Layouts drop to fewer columns at the `breakpoint` tokens and never scroll sideways on a 375px phone.
@@ -75,7 +76,7 @@ Every color in the system has a hex code above. Use the 8-digit hex for `ink-gla
 
 ## Imagery
 
-- The banner (`assets/Images/banner-1774.jpg`, 2:1) is the hero at full width on `ink`. Its headline is part of the image, so the same facts must also appear as live text below it. Serve the 900px copy to phones.
+- The compass art (`assets/Images/hero-compass.jpg`, with `hero-art-1774.jpg` and `hero-art-900.jpg` for smaller screens) is the Hero's backdrop: the brand banner with every word removed. All text in the Hero is live; never bake text into the art. The original banner (`banner-1774.jpg`) is kept for reference only.
 - The portrait (`assets/Images/headshot.jpg`, 4:5) is the only photograph. It shows a real person: never crop it tighter, filter it or reuse it outside Winsome Mundy's own pages.
 - No stock photography, illustrations or decorative gradients beyond the teaching section's `night` to `ink` fade.
 
@@ -93,12 +94,12 @@ Every color in the system has a hex code above. Use the 8-digit hex for `ink-gla
 
 - Keyboard focus is a solid 2px `gold` outline, 3px offset, `radius-hairline` corners (8.2:1 on `night`).
 - Text pairs meet WCAG AA in every case listed in the color notes. Do not put `muted` or `violet` text on `line`.
-- Every image has descriptive alt text; the banner's alt repeats its headline and values.
+- Every meaningful image has descriptive alt text. The Hero's compass art is decorative (`alt=""`, hidden from screen readers) because its words are live text.
 - Sticky navigation reserves scroll padding (72px desktop, 100px phone) so anchored headings are not hidden.
 
 ## Building a student tool on this system
 
-- Install the system from GitHub, pinned to a release tag (`npm install github:winsomemundy/design-system#v1.2.0`), import `@winsomemundy/design-system/tokens.css` and then `@winsomemundy/design-system/bundle.css`, load the three fonts (link above), and set `<body class="wm-surface">`. Put only the tool's own additions in its stylesheet, loaded after these two. To take a design-system change, release a new tag and bump it in the tool.
+- Install the system from GitHub, pinned to a release tag (`npm install github:winsomemundy/design-system#v1.3.0`), import `@winsomemundy/design-system/tokens.css` and then `@winsomemundy/design-system/bundle.css`, load the three fonts (link above), and set `<body class="wm-surface">`. Put only the tool's own additions in its stylesheet, loaded after these two. To take a design-system change, release a new tag and bump it in the tool.
 - Reuse the `wm-` component classes rather than restyling: Button for actions, Eyebrow and `heading-lg` for section heads, Impact Stat for results, panels for grouped inputs, Notice for cautions and input errors, Form Fields for inputs, Balance Chart and Data Table for projected results, and a Calculation Explainer for any rule a student may not know.
 - Money tools compare every plan with paying the card's minimum in a Comparison Callout. When the plan saves money, say how much interest and how many months it saves; when it costs more, say that just as plainly. When a payment is below the issuer's first-month minimum ($25, or 1% of the balance plus interest if greater), show the minimum-payment warning (see Notice).
 - Lay every tool out as a Tool Page: the nav with a "Student tools" link, a tool header, an 860px column of cards, and the footer "A free student tool by Winsome Mundy", linking to winsomemundy.com/#tools.
