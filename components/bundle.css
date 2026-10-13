@@ -20,6 +20,8 @@
 .wm-nav__links { list-style: none; display: flex; gap: 22px; margin: 0; padding: 0; flex-wrap: wrap; }
 .wm-nav__links a { color: var(--muted); text-decoration: none; text-transform: uppercase; }
 .wm-nav__links a:hover { color: var(--gold); }
+.wm-surface a.wm-nav__link { color: var(--muted); text-decoration: none; text-transform: uppercase; font-family: var(--font-body); font-size: 0.82rem; letter-spacing: 0.14em; font-weight: 400; }
+.wm-surface a.wm-nav__link:hover { color: var(--gold); }
 
 /* Button */
 .wm-btn { display: inline-flex; align-items: center; gap: var(--stack-xs); padding: 12px 20px; border-radius: var(--radius-hairline); border: var(--hairline) solid var(--gold); background: var(--gold); color: var(--ink); text-decoration: none; text-transform: uppercase; cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
@@ -188,5 +190,18 @@
 .wm-row--final { background: var(--violet-tint); }
 .wm-pill { margin-left: 6px; padding: 1px 8px; border-radius: var(--radius-hairline); font-size: 0.72rem; font-weight: 500; white-space: nowrap; color: var(--ink); background: var(--gold); }
 .wm-pill--final { background: var(--violet); }
+
+/* Tool page: the frame every student tool shares */
+.wm-tool-page { min-height: 100vh; }
+.wm-wrap--tool { max-width: 860px; }
+.wm-tool-page__main { padding-block: 48px 0; }
+.wm-tool-header { margin-bottom: 32px; }
+.wm-tool-header__desc { margin: 10px 0 0; color: var(--muted); }
+.wm-tool-page .wm-card { margin-bottom: 24px; }
+.wm-tool-page .wm-card__title { margin-bottom: var(--stack-sm); }
+.wm-tool-page .wm-card__head { margin-bottom: var(--stack-sm); }
+.wm-tool-page .wm-card__head .wm-card__title { margin: 0; }
+.wm-tool-footer { margin-top: 48px; padding-block: 24px; border-top: var(--hairline) solid var(--line); background: var(--ink); color: var(--muted); }
+@media (max-width: 560px) { .wm-tool-page { font-size: 1rem; } }
 
 @media (prefers-reduced-motion: reduce) { .wm-surface * { transition: none !important; } }

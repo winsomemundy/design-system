@@ -14,5 +14,8 @@ The anchors. On the live site the bar is `position: sticky` with an 88% `ink` tr
 ## Phones
 Below `bp-nav` (760px) the links move to their own row that scrolls sideways with its scrollbar hidden, at 0.76rem. Never hide the links.
 
+## In a student tool
+Replace the section links with one `a.wm-nav__link` reading "Student tools", linked to winsomemundy.com/#tools. See Tool Page.
+
 ## Don't
 Add icons, a hamburger menu or a button to the bar.
