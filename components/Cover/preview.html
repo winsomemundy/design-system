@@ -1,0 +1,49 @@
+<!-- @dsCard height=320 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../tokens.css"><link rel="stylesheet" href="../bundle.css"><title>Cover</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Jost:wght@300&display=swap">
+<style>
+  html, body { margin: 0; }
+  body { background: var(--night); width: 960px; height: 320px; position: relative; overflow: hidden; }
+  svg { position: absolute; inset: 0; }
+  .ink { fill: var(--ink); }
+  .panel { fill: var(--panel); }
+  .violet { fill: var(--violet); }
+  .gold { fill: var(--gold); }
+  .tile { rx: var(--radius-none); }
+  .ring { fill: none; stroke: var(--gold); stroke-width: var(--hairline); }
+  .ring-soft { fill: none; stroke: var(--line); stroke-width: var(--hairline); }
+  .mark { fill: var(--night); stroke: var(--gold); stroke-width: var(--hairline); }
+  .rule { fill: var(--gold); }
+  .text { position: absolute; left: 48px; bottom: 44px; width: 440px; }
+  .name { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: 96px; line-height: .95; color: var(--text); }
+  .tag { margin: 20px 0 0; font-family: var(--font-body); font-weight: 300; font-size: 14px; line-height: 1.5; color: var(--muted); }
+</style></head>
+<body>
+<svg width="960" height="320" viewBox="0 0 960 320" aria-hidden="true">
+  <!--
+    blocks: ink slab 180×320, violet 260×132, panel 260×188, gold 116×116; corners radius-none.
+    arrangement: one tall ink slab with two stacked satellites bleeding off the top, right and bottom edges; gold square set into the panel's lower right.
+    pattern: literal motif (compass) → concentric quarter-circle rings in gold hairline around the slab/panel corner, with the 13px timeline diamond at their centre; chosen because the banner's compass gives the site its bearings (N 000°, E 090°, S 180°, W 270°).
+    scales: ring step 44px (half of section-y, 88px), stroke hairline (1px), one rule-mark (36px) in gold, radius-none on every block.
+  -->
+  <rect class="ink tile" x="520" y="0" width="180" height="320"/>
+  <rect class="violet tile" x="700" y="0" width="260" height="132"/>
+  <rect class="panel tile" x="700" y="132" width="260" height="188"/>
+  <rect class="gold tile" x="844" y="204" width="116" height="116"/>
+  <path class="ring-soft" d="M 700 276 A 44 44 0 0 0 656 320"/>
+  <path class="ring" d="M 700 232 A 88 88 0 0 0 612 320"/>
+  <path class="ring" d="M 700 188 A 132 132 0 0 0 568 320"/>
+  <path class="ring" d="M 700 144 A 176 176 0 0 0 524 320"/>
+  <path class="ring" d="M 744 320 A 44 44 0 0 0 700 276"/>
+  <path class="ring" d="M 788 320 A 88 88 0 0 0 700 232"/>
+  <rect class="mark" x="693.5" y="313.5" width="13" height="13" transform="rotate(45 700 320)"/>
+  <rect class="rule" x="556" y="40" width="36" height="1"/>
+</svg>
+<div class="text">
+  <p class="name">Winsome<br>Mundy</p>
+  <p class="tag">Clear vision. Strong priorities. Meaningful outcomes.</p>
+</div>
+</body>
+</html>

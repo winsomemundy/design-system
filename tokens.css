@@ -1,0 +1,62 @@
+/* Winsome Mundy — generated from tokens.json */
+
+:root, [data-theme="dark"] {
+  --ink: #120c2e;
+  --ink-glass: #120c2ee0;
+  --night: #1b1442;
+  --panel: #241a57;
+  --line: #3a2e7a;
+  --violet: #9b7bff;
+  --gold: #d4ae6a;
+  --text: #ece8ff;
+  --muted: #b5acd9;
+  --violet-tint: #9b7bff24;
+  --gold-tint: #d4ae6a1a;
+  --alert: #ff9b9b;
+  color-scheme: dark;
+}
+
+:root {
+  --gutter: 20px;
+  --stack-xs: 8px;
+  --stack-sm: 14px;
+  --grid-gap: 20px;
+  --card-pad-sm: 22px;
+  --card-pad: 26px;
+  --card-pad-lg: 30px;
+  --column-gap: 48px;
+  --split-gap: 56px;
+  --section-y-sm: 60px;
+  --section-y: 88px;
+  --radius-none: 0;
+  --radius-hairline: 2px;
+  --content-max: 1100px;
+  --portrait-max: 320px;
+  --rule-mark: 36px;
+  --hairline: 1px;
+  --bp-phone: 560px;
+  --bp-nav: 760px;
+  --bp-stack: 820px;
+  --bp-grid: 860px;
+  --font-display: "Poppins", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Jost", "Futura", "Avenir", "Segoe UI", system-ui, sans-serif;
+  --font-script: "Allura", "Snell Roundhand", "Brush Script MT", cursive;
+}
+
+.display-xl { font-family: var(--font-display); font-size: 3.4rem; line-height: 1.15; font-weight: 700; letter-spacing: 0.01em; }
+.heading-lg { font-family: var(--font-display); font-size: 2.5rem; line-height: 1.15; font-weight: 700; }
+.heading-md { font-family: var(--font-display); font-size: 1.3rem; line-height: 1.15; font-weight: 600; }
+.heading-sm { font-family: var(--font-display); font-size: 1.05rem; line-height: 1.15; font-weight: 600; }
+.stat { font-family: var(--font-display); font-size: 2.8rem; line-height: 1; font-weight: 600; }
+.brand { font-family: var(--font-display); font-size: 0.95rem; line-height: 1.15; font-weight: 600; letter-spacing: 0.08em; }
+.eyebrow { font-family: var(--font-display); font-size: 0.78rem; line-height: 1.65; font-weight: 500; letter-spacing: 0.3em; }
+.credential { font-family: var(--font-display); font-size: 0.85rem; line-height: 1.65; font-weight: 500; letter-spacing: 0.28em; }
+.button { font-family: var(--font-display); font-size: 0.85rem; line-height: 1.65; font-weight: 500; letter-spacing: 0.1em; }
+.date { font-family: var(--font-display); font-size: 0.8rem; line-height: 1.65; font-weight: 500; letter-spacing: 0.16em; }
+.topic { font-family: var(--font-display); font-size: 0.75rem; line-height: 1.65; font-weight: 500; letter-spacing: 0.22em; }
+.body { font-family: var(--font-body); font-size: 1.075rem; line-height: 1.65; font-weight: 300; }
+.body-sm { font-family: var(--font-body); font-size: 0.95rem; line-height: 1.45; font-weight: 300; }
+.nav { font-family: var(--font-body); font-size: 0.82rem; line-height: 1.65; font-weight: 400; letter-spacing: 0.14em; }
+.caption { font-family: var(--font-body); font-size: 0.85rem; line-height: 1.65; font-weight: 300; }
+.script-lg { font-family: var(--font-script); font-size: 3.4rem; line-height: 1.15; font-weight: 400; }
+.script-md { font-family: var(--font-script); font-size: 3rem; line-height: 1.2; font-weight: 400; }

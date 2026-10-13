@@ -1,0 +1,33 @@
+<!-- @dsCard group="Forms" height=380 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="../../tokens.css"><link rel="stylesheet" href="../bundle.css"><title>FormFields — preview</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Jost:wght@300;400;500&family=Allura&display=swap">
+<style>body{padding:24px 20px;}</style></head>
+<body class="wm-surface">
+<form class="wm-card" style="margin:0" onsubmit="event.preventDefault()">
+  <h2 class="wm-card__title heading-sm">Your debt</h2>
+  <div class="wm-fields">
+    <div><label class="wm-label" for="f-balance">Current balance</label><input id="f-balance" class="wm-input" type="number" value="5000"></div>
+    <div><label class="wm-label" for="f-apr">Annual interest rate (%)</label><input id="f-apr" class="wm-input" type="number" value="18"></div>
+    <div><label class="wm-label" for="f-due">Payment due day</label><input id="f-due" class="wm-input" type="number" value="15"></div>
+  </div>
+  <h2 class="wm-card__title heading-sm">Payoff plan</h2>
+  <div class="wm-toggle">
+    <button type="button" class="wm-toggle__option" aria-pressed="true">Fixed monthly payment</button>
+    <button type="button" class="wm-toggle__option" aria-pressed="false">Target number of months</button>
+  </div>
+  <div class="wm-fields wm-fields--2" style="margin-bottom:0">
+    <div><label class="wm-label" for="f-pay">Monthly payment ($)</label><input id="f-pay" class="wm-input" type="number" value="150"></div>
+    <div><label class="wm-label" for="f-new">Assumed new monthly charges (optional)</label><input id="f-new" class="wm-input" type="number" placeholder="$0.00"></div>
+  </div>
+  <button type="submit" class="wm-btn wm-btn--block button">Calculate</button>
+</form>
+<script>
+  document.querySelectorAll('.wm-toggle__option').forEach(function (b) {
+    b.addEventListener('click', function () {
+      document.querySelectorAll('.wm-toggle__option').forEach(function (o) { o.setAttribute('aria-pressed', String(o === b)) })
+    })
+  })
+</script>
+</body>
+</html>

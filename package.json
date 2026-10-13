@@ -1,0 +1,14 @@
+{
+  "name": "@winsomemundy/design-system",
+  "version": "1.0.0",
+  "description": "Winsome Mundy design system: tokens, component styles and guidelines for winsomemundy.com and its student tools.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "exports": {
+    "./tokens.css": "./tokens.css",
+    "./tokens.json": "./tokens.json",
+    "./bundle.css": "./components/bundle.css"
+  },
+  "files": ["tokens.css", "tokens.json", "components/bundle.css", "README.md"],
+  "repository": { "type": "git", "url": "https://github.com/winsomemundy/design-system.git" }
+}
