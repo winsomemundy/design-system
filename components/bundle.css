@@ -15,7 +15,7 @@
 /* Nav */
 .wm-nav { background: var(--ink-glass); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: var(--hairline) solid var(--line); }
 .wm-nav__inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 60px; flex-wrap: wrap; }
-.wm-nav__brand { color: var(--text); text-decoration: none; text-transform: uppercase; }
+.wm-nav__brand, .wm-surface a.wm-nav__brand { color: var(--text); text-decoration: none; text-transform: uppercase; } /* beats the .wm-surface a link color */
 .wm-nav__brand span { color: var(--gold); }
 .wm-nav__links { list-style: none; display: flex; gap: 22px; margin: 0; padding: 0; flex-wrap: wrap; }
 .wm-nav__links a { color: var(--muted); text-decoration: none; text-transform: uppercase; }

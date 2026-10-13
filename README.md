@@ -3,7 +3,7 @@
      each components/<Name>/preview.html opens in a browser on its own.
 
      Use in an app (pin a tag; bump it to take updates):
-       npm install github:winsomemundy/design-system#v1.0.0
+       npm install github:winsomemundy/design-system#v1.0.1
        import '@winsomemundy/design-system/tokens.css'
        import '@winsomemundy/design-system/bundle.css'
      and load the fonts from Google Fonts (link below, under Type). -->

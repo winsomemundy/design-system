@@ -1,6 +1,6 @@
 {
   "name": "@winsomemundy/design-system",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Winsome Mundy design system: tokens, component styles and guidelines for winsomemundy.com and its student tools.",
   "license": "UNLICENSED",
   "type": "module",
