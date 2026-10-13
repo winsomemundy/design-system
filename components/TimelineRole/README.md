@@ -6,7 +6,7 @@ One position on the experience timeline: a gold-outlined diamond on a `line` spi
 For work history, newest first. Each employer is one `li.wm-role` inside one `ol.wm-timeline`.
 
 ## Markup
-`ol.wm-timeline > li.wm-role > .wm-role__head (h3.wm-role__name.heading-md + span.wm-role__when.date) + p.wm-role__title + p.wm-role__company.body-sm + ul.wm-role__points + span.wm-award`
+`ol.wm-timeline > li.wm-role > .wm-role__head (h3.wm-role__name.heading-md + span.wm-role__when.date) + p.wm-role__title + p.wm-role__company + ul.wm-role__points + span.wm-award`
 
 ## The consumer provides
 Dates as "Mon YYYY – Mon YYYY" with an en dash; the job title and city joined by " · "; two or three points; awards joined by " · " in one chip.

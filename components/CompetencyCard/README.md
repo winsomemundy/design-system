@@ -6,7 +6,7 @@ A `panel` card with a `heading-sm` title and a short `muted` description, laid o
 For a set of parallel capabilities, skills or features (six on the site: three columns, two rows).
 
 ## Markup
-`.wm-grid > article.wm-card > h3.wm-card__title.heading-sm + p.wm-card__text`
+`.wm-grid > article.wm-card.wm-card--competency > h3.wm-card__title.heading-sm + p.wm-card__text` (the modifier sets the 0.98rem description)
 
 ## The consumer provides
 A multiple of three cards (3 → 2 → 1 columns at 900px and 560px), each with a title of two or three words and one or two sentences.
