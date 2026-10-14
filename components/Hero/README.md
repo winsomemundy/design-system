@@ -9,7 +9,7 @@ Once, at the top of the home page, directly under the Nav and followed by the Va
 ```
 header.wm-hero
   picture.wm-hero__art[aria-hidden]
-    source[media="(min-width: 1280px)"] → hero-compass.jpg
+    source[media="(min-width: 1000px)"] → hero-compass.jpg
     img → hero-art-1774.jpg (srcset hero-art-900.jpg 900w, hero-art-1774.jpg 1774w), alt=""
   .wm-wrap.wm-hero__content
     figure.wm-portrait.wm-hero__portrait > img (headshot.jpg)
@@ -22,9 +22,9 @@ header.wm-hero
 ```
 
 ## Layout
-- 1280px and wider: the compass art sits on the right at the hero's full height, fading into `night` on its left edge; the text column (450px) ends just before the compass ring. Below 1280px they would touch.
-- Below 1280px: the compass becomes a 240px band across the top, fading into `night` on the left (`night` to `night-clear`), with the portrait and text side by side below it.
-- 640px and below: a 200px band, then the portrait and text stacked; buttons share the width below 560px.
+- 1000px and wider: the compass art sits on the right at the hero's full height (about 287px), fading into `night` on its left edge. The left side sets that height: a 150px portrait and a 420px text column with 40px above and below. The compass is about 206px across, matching the portrait's weight; don't make it smaller, and don't let it float shorter than the hero.
+- Below 1000px: the compass becomes a 180px band across the top, fading into `night` on the left (`night` to `night-clear`), with the portrait and text side by side below it.
+- 640px and below: a 160px band, then the portrait and text stacked; buttons share the width below 560px.
 
 ## The consumer provides
 The three compass images from `assets/Images` and the headshot. Every word is live text; never put text back into the art. The art is decorative, so its `alt` is empty and the picture is hidden from screen readers.
