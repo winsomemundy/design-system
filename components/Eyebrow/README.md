@@ -1,15 +1,15 @@
 # Eyebrow
 
-The section label: a 36px gold rule, the section name in uppercase `gold`, and an optional compass bearing in `muted`.
+The section label: a 36px gold rule and the section name in uppercase `gold`.
 
 ## When to use
 At the top of every section, directly above its `heading-lg` heading.
 
 ## Markup
-`p.wm-eyebrow.eyebrow` containing the label, plus `span.wm-eyebrow__bearing` for a bearing.
+`p.wm-eyebrow.eyebrow` containing the label.
 
-## Bearings
-Only the first four sections get a bearing, in order: N 000°, E 090°, S 180°, W 270°. They echo the compass in the banner. Leave the bearing off every other eyebrow.
+## Bearings (retired)
+Compass bearings after the label (N 000°, E 090°, S 180°, W 270°) were retired in v1.6.2. `span.wm-eyebrow__bearing` stays in the stylesheet so older pages don't break; don't use it on new work.
 
 ## Don't
-Use an eyebrow without a heading after it, or number sections (01, 02...).
+Use an eyebrow without a heading after it, number sections (01, 02...), or add a bearing.

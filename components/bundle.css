@@ -42,6 +42,7 @@
 /* Eyebrow */
 .wm-eyebrow { display: flex; align-items: center; gap: 12px; margin: 0 0 var(--stack-sm); color: var(--gold); text-transform: uppercase; }
 .wm-eyebrow::before { content: ""; width: var(--rule-mark); height: var(--hairline); background: var(--gold); flex: none; }
+/* Retired in v1.6.2: kept so older pages don't break; not for new work */
 .wm-eyebrow__bearing { color: var(--muted); letter-spacing: .12em; font-weight: 400; }
 
 /* Impact stat */
