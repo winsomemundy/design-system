@@ -3,7 +3,7 @@
 Two side-by-side panels, one for each of Winsome Mundy's roles: Senior Technical Product Owner (violet) and Educator (gold). Each gives a one-line thesis, a short story, three proof points, a quote and a link to its section.
 
 ## When to use
-On the home page directly after the Hero, under an Eyebrow ("Product and classroom") and a `heading-lg` line ("Two roles, one habit: making complex things clear."). It replaces a résumé-style summary paragraph.
+On the home page directly after the Hero, under an Eyebrow ("Product and classroom") and a `heading-lg` line ("Making complex things clear."). It replaces a résumé-style summary paragraph.
 
 ## Markup
 `.wm-roles__grid > article.wm-role-panel.wm-role-panel--product` and `article.wm-role-panel.wm-role-panel--educator`, each with:
