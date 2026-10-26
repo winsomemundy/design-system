@@ -10,7 +10,7 @@ As the outer layout of every student app, so moving between the website and any 
 div.wm-surface.wm-tool-page
   nav.wm-nav > .wm-wrap.wm-wrap--tool.wm-nav__inner
     a.wm-nav__brand.brand ("Winsome <span>Mundy</span>", to https://winsomemundy.com/)
-    a.wm-nav__link ("Student tools", to https://winsomemundy.com/#tools)
+    a.wm-nav__link ("Student tools", to https://winsomemundy.com/tools)
   main.wm-wrap.wm-wrap--tool.wm-tool-page__main
     header.wm-tool-header
       p.wm-eyebrow.eyebrow (the course topic: "Personal finance · Amortization")
@@ -18,7 +18,7 @@ div.wm-surface.wm-tool-page
       p.wm-tool-header__desc (one line: what the student gets)
     section.wm-card … (inputs, Notice, Comparison Callout, results)
   footer.wm-tool-footer.caption > .wm-wrap.wm-wrap--tool
-    "A free student tool by <a href="https://winsomemundy.com/#tools">Winsome Mundy</a>. More tools at winsomemundy.com."
+    "A free student tool by <a href="https://winsomemundy.com/tools">Winsome Mundy</a>. More tools at winsomemundy.com."
 ```
 Also give `html` and `body` a `night` background and zero margin, so the ground shows past the page edges.
 

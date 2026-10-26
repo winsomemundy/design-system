@@ -3,7 +3,7 @@
 A `panel` card for one way of working: a `heading-sm` name, a gold one-line idea, a short paragraph and, at the foot, one line of proof under a violet "Proof" label.
 
 ## When to use
-On the home page's "How I build products" section (eyebrow "Product principles · E 090°"): four cards, two by two. Use it wherever a claim about how Winsome works needs evidence from a real role. For a list of skills or keywords with no story, use the Tag List instead.
+On the Product page's "How I build products" section (eyebrow "Product principles"): four cards, two by two. Use it wherever a claim about how Winsome works needs evidence from a real role. For a list of skills or keywords with no story, use the Tag List instead.
 
 ## Markup
 `.wm-grid.wm-grid--2 > article.wm-card.wm-principle`, each with:

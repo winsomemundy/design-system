@@ -3,7 +3,7 @@
 The top of the home page: the framed portrait and a live headline on the left, the compass art on the right.
 
 ## When to use
-Once, at the top of the home page, directly under the Nav and followed by the Values Strip.
+Once, at the top of the home page, directly under the Nav and followed by the Role Panels.
 
 ## Markup
 ```
