@@ -3,7 +3,7 @@
 The six values from the brand banner in one row: a gold diamond, the value's name in uppercase and one short first-person line.
 
 ## When to use
-Directly under the Hero on the home page. The six values are fixed and always appear in this order: Integrity, Excellence, People centered, Value driven, Adaptive, Data informed.
+The home page stopped using it in v1.6.0: the principles in "How I build products" now carry the values, with proof. It stays in the system for pages that want the values in brief. When used, it goes directly under the Hero. The six values are fixed and always appear in this order: Integrity, Excellence, People centered, Value driven, Adaptive, Data informed.
 
 ## Markup
 `section.wm-values > ul.wm-wrap.wm-values__grid > li > h2.wm-values__name + p.wm-values__text`

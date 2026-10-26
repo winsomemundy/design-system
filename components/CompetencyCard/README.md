@@ -3,7 +3,7 @@
 A `panel` card with a `heading-sm` title and a short `muted` description, laid out in a grid.
 
 ## When to use
-For a set of parallel capabilities, skills or features (six on the site: three columns, two rows).
+For a set of parallel capabilities or features. The home page replaced its six competency cards in v1.6.0 with Principle Cards (how the work is done, with proof) and a Tag List (the skills and keywords); prefer those for new work.
 
 ## Markup
 `.wm-grid > article.wm-card.wm-card--competency > h3.wm-card__title.heading-sm + p.wm-card__text` (the modifier sets the 0.98rem description)

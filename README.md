@@ -3,7 +3,7 @@
      each components/<Name>/preview.html opens in a browser on its own.
 
      Use in an app (pin a tag; bump it to take updates):
-       npm install github:winsomemundy/design-system#v1.5.0
+       npm install github:winsomemundy/design-system#v1.6.0
        import '@winsomemundy/design-system/tokens.css'
        import '@winsomemundy/design-system/bundle.css'
      and load the fonts from Google Fonts (link below, under Type). -->
@@ -62,7 +62,7 @@ Every color in the system has a hex code above. Use the 8-digit hex for `ink-gla
 
 ## Layout and spacing
 
-- The home page opens with the Hero, then the Values Strip, then the Role Panels.
+- The home page opens with the Hero, then the Role Panels with their mentoring band, then the accomplishments. "How I build products" (Principle Cards and a Tag List) follows them.
 - One centered column, `content-max` wide, with `gutter` side padding at every width. Sections are separated by a `line` rule and padded `section-y` (`section-y-sm` on phones).
 - Every section opens with an Eyebrow, a `heading-lg` heading and an optional `muted` subline, then its content.
 - Cards sit in grids with `grid-gap`; text columns sit `column-gap` apart. Layouts drop to fewer columns at the `breakpoint` tokens and never scroll sideways on a 375px phone.
@@ -97,10 +97,14 @@ Every color in the system has a hex code above. Use the 8-digit hex for `ink-gla
 - Text pairs meet WCAG AA in every case listed in the color notes. Do not put `muted` or `violet` text on `line`.
 - Every meaningful image has descriptive alt text. The Hero's compass art is decorative (`alt=""`, hidden from screen readers) because its words are live text.
 - Sticky navigation reserves scroll padding (72px desktop, 100px phone) so anchored headings are not hidden.
+- Never rely on color alone: checked answers show a ✓ or ✗ as well as their color (see Form Fields).
+- When a tool shows results, announce them: keep a `p.wm-sr-only[role="status"]` on the page from the start and write a one-sentence summary into it ("Results ready. Paid off in 47 months, by Sep 15, 2030. Total interest $1,983.61.").
+- Charts are one image with a label that states the result; tables that scroll sideways are focusable regions with a caption (see Balance Chart and Data Table).
+- `wm-sr-only` hides text visually but keeps it for screen readers. Use it for announcements and captions, never to hide content a sighted reader needs.
 
 ## Building a student tool on this system
 
-- Install the system from GitHub, pinned to a release tag (`npm install github:winsomemundy/design-system#v1.5.0`), import `@winsomemundy/design-system/tokens.css` and then `@winsomemundy/design-system/bundle.css`, load the three fonts (link above), and set `<body class="wm-surface">`. Put only the tool's own additions in its stylesheet, loaded after these two. To take a design-system change, release a new tag and bump it in the tool.
-- Reuse the `wm-` component classes rather than restyling: Button for actions, Eyebrow and `heading-lg` for section heads, Impact Stat for results, panels for grouped inputs, Notice for cautions and input errors, Form Fields for inputs, Balance Chart and Data Table for projected results, and a Calculation Explainer for any rule a student may not know.
+- Install the system from GitHub, pinned to a release tag (`npm install github:winsomemundy/design-system#v1.6.0`), import `@winsomemundy/design-system/tokens.css` and then `@winsomemundy/design-system/bundle.css`, load the three fonts (link above), and set `<body class="wm-surface">`. Put only the tool's own additions in its stylesheet, loaded after these two. To take a design-system change, release a new tag and bump it in the tool.
+- Reuse the `wm-` component classes rather than restyling: Button for actions, Eyebrow and `heading-lg` for section heads, Impact Stat for results, panels for grouped inputs, Notice for cautions and input errors, Form Fields for inputs (with checked-answer states for quiz-style tools), Balance Chart and Data Table for projected results, and a Calculation Explainer for any rule a student may not know.
 - Money tools compare every plan with paying the card's minimum in a Comparison Callout. When the plan saves money, say how much interest and how many months it saves; when it costs more, say that just as plainly. When a payment is below the issuer's first-month minimum ($25, or 1% of the balance plus interest if greater), show the minimum-payment warning (see Notice).
 - Lay every tool out as a Tool Page: the nav with a "Student tools" link, a tool header, an 860px column of cards, and the footer "A free student tool by Winsome Mundy", linking to winsomemundy.com/#tools.

@@ -1,4 +1,4 @@
-<!-- @dsCard group="Forms" height=380 -->
+<!-- @dsCard group="Forms" height=560 -->
 <!doctype html>
 <html>
 <head><meta charset="utf-8"><link rel="stylesheet" href="../../tokens.css"><link rel="stylesheet" href="../bundle.css"><title>FormFields — preview</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Jost:wght@300;400;500&family=Allura&display=swap">
@@ -22,6 +22,13 @@
   </div>
   <button type="submit" class="wm-btn wm-btn--block button">Calculate</button>
 </form>
+<div class="wm-card" style="margin:16px 0 0">
+  <h2 class="wm-card__title heading-sm">Checked answers</h2>
+  <div class="wm-fields wm-fields--2" style="margin-bottom:0">
+    <div><label class="wm-label" for="f-right">Area of A (cm²)</label><input id="f-right" class="wm-input wm-input--right" type="text" value="25"></div>
+    <div><label class="wm-label" for="f-wrong">Perimeter of A (cm)</label><input id="f-wrong" class="wm-input wm-input--wrong" type="text" value="20" aria-invalid="true"></div>
+  </div>
+</div>
 <script>
   document.querySelectorAll('.wm-toggle__option').forEach(function (b) {
     b.addEventListener('click', function () {
