@@ -3,7 +3,7 @@
      each components/<Name>/preview.html opens in a browser on its own.
 
      Use in an app (pin a tag; bump it to take updates):
-       npm install github:winsomemundy/design-system#v1.7.1
+       npm install github:winsomemundy/design-system#v1.7.2
        import '@winsomemundy/design-system/tokens.css'
        import '@winsomemundy/design-system/bundle.css'
      and load the fonts from Google Fonts (link below, under Type). -->
@@ -12,7 +12,7 @@ The visual language of winsomemundy.com: a Senior Technical Product Owner and ed
 
 ## Voice and content
 
-- Write in the first person, plainly and confidently: "I translate between executives, engineers, regulators and end users." No hype words, no exclamation marks, no emoji.
+- Write in the first person, plainly and confidently: "I translate between executives, engineers, regulators and end users." No hype words and no emoji. Exclamation marks belong only to personal storytelling, such as the About page, at most one per paragraph; never use them in results, product copy or student tools.
 - Lead with results and real numbers: "97% attach rate", "zero service disruptions", "in under six months". Numbers carry a unit or a short caption in `body-sm`.
 - Name things the way the industry does: A-CSPO, NACHA, GDPR, Form I-9, Azure DevOps. Do not explain acronyms that the audience (hiring managers, product leaders) already knows.
 - Student-facing copy is direct and practical: say what the tool does with the student's own numbers ("Enter a balance, interest rate and payment to see your payoff date").
@@ -104,7 +104,7 @@ Every color in the system has a hex code above. Use the 8-digit hex for `ink-gla
 
 ## Building a student tool on this system
 
-- Install the system from GitHub, pinned to a release tag (`npm install github:winsomemundy/design-system#v1.7.1`), import `@winsomemundy/design-system/tokens.css` and then `@winsomemundy/design-system/bundle.css`, load the three fonts (link above), and set `<body class="wm-surface">`. Put only the tool's own additions in its stylesheet, loaded after these two. To take a design-system change, release a new tag and bump it in the tool.
+- Install the system from GitHub, pinned to a release tag (`npm install github:winsomemundy/design-system#v1.7.2`), import `@winsomemundy/design-system/tokens.css` and then `@winsomemundy/design-system/bundle.css`, load the three fonts (link above), and set `<body class="wm-surface">`. Put only the tool's own additions in its stylesheet, loaded after these two. To take a design-system change, release a new tag and bump it in the tool.
 - Reuse the `wm-` component classes rather than restyling: Button for actions, Eyebrow and `heading-lg` for section heads, Impact Stat for results, panels for grouped inputs, Notice for cautions and input errors, Form Fields for inputs (with checked-answer states for quiz-style tools), Balance Chart and Data Table for projected results, and a Calculation Explainer for any rule a student may not know.
 - Money tools compare every plan with paying the card's minimum in a Comparison Callout. When the plan saves money, say how much interest and how many months it saves; when it costs more, say that just as plainly. When a payment is below the issuer's first-month minimum ($25, or 1% of the balance plus interest if greater), show the minimum-payment warning (see Notice).
 - Lay every tool out as a Tool Page: the nav with a "Student tools" link, a tool header, an 860px column of cards, and the footer "A free student tool by Winsome Mundy", linking to winsomemundy.com/tools.
