@@ -3,7 +3,7 @@
      each components/<Name>/preview.html opens in a browser on its own.
 
      Use in an app (pin a tag; bump it to take updates):
-       npm install github:winsomemundy/design-system#v1.7.5
+       npm install github:winsomemundy/design-system#v1.7.6
        import '@winsomemundy/design-system/tokens.css'
        import '@winsomemundy/design-system/bundle.css'
      and load the fonts from Google Fonts (link below, under Type). -->
@@ -62,7 +62,7 @@ Every color in the system has a hex code above. Use the 8-digit hex for `ink-gla
 
 ## Layout and spacing
 
-- The website has five pages, joined by the Nav. Home (`/`): the Hero with its intro line and an About me button, the Role Panels with their mentoring band, a short row of headline results and the contact block. Product (`/product`): the accomplishments, "How I build products" (Principle Cards and a Tag List), the experience timeline and credentials. Teaching (`/teaching`): the educator story and a pointer to the tools. Student tools (`/tools`): the Tool Cards. About (`/about`): the personal story beside a Portrait. Every page but Student tools ends with the contact block, and each has one `h1`.
+- The website has five pages, joined by the Nav. Home (`/`): the Hero with its intro line and an About me button, the Role Panels with their mentoring band, and the contact block. Product (`/product`): the accomplishments, "How I build products" (Principle Cards and a Tag List), the experience timeline and credentials. Teaching (`/teaching`): the educator story and a pointer to the tools. Student tools (`/tools`): the Tool Cards. About (`/about`): the personal story beside a Portrait. Every page but Student tools ends with the contact block, and each has one `h1`.
 - One centered column, `content-max` wide, with `gutter` side padding at every width. Sections are separated by a `line` rule and padded `section-y` (`section-y-sm` on phones).
 - Every section opens with an Eyebrow, a `heading-lg` heading and an optional `muted` subline, then its content.
 - Cards sit in grids with `grid-gap`; text columns sit `column-gap` apart. Layouts drop to fewer columns at the `breakpoint` tokens and never scroll sideways on a 375px phone.
@@ -84,7 +84,7 @@ Every color in the system has a hex code above. Use the 8-digit hex for `ink-gla
 ## Iconography
 
 - There is no logo mark; the wordmark is the name set in `brand`. Do not draw a logo.
-- Icons appear only in the Role Panels: line icons in the Lucide style (24px grid, 2px round strokes, no fill), drawn as inline `svg[aria-hidden]` in the accent color. The set: layers (product), graduation cap (educator), shopping cart, open book, column chart, trophy, people, laptop. Proof icons sit in a 32px accent-tinted circle, the system's one round shape. Lucide icons are ISC-licensed.
+- Icons appear only in the Role Panels and their mentoring band: line icons in the Lucide style (24px grid, 2px round strokes, no fill), drawn as inline `svg[aria-hidden]` in the accent color. The set: layers (product), graduation cap (educator), shopping cart, open book, column chart, trophy, people, laptop. Proof icons sit in a 32px accent-tinted circle, the system's one round shape. Lucide icons are ISC-licensed.
 - Everywhere else, use text glyphs only: ↗ after links that open another site, ◆ before awards, · and • as separators. No emoji.
 
 ## Motion
@@ -105,7 +105,7 @@ Every color in the system has a hex code above. Use the 8-digit hex for `ink-gla
 
 ## Building a student tool on this system
 
-- Install the system from GitHub, pinned to a release tag (`npm install github:winsomemundy/design-system#v1.7.5`), import `@winsomemundy/design-system/tokens.css` and then `@winsomemundy/design-system/bundle.css`, load the three fonts (link above), and set `<body class="wm-surface">`. Put only the tool's own additions in its stylesheet, loaded after these two. To take a design-system change, release a new tag and bump it in the tool.
+- Install the system from GitHub, pinned to a release tag (`npm install github:winsomemundy/design-system#v1.7.6`), import `@winsomemundy/design-system/tokens.css` and then `@winsomemundy/design-system/bundle.css`, load the three fonts (link above), and set `<body class="wm-surface">`. Put only the tool's own additions in its stylesheet, loaded after these two. To take a design-system change, release a new tag and bump it in the tool.
 - Reuse the `wm-` component classes rather than restyling: Button for actions, Eyebrow and `heading-lg` for section heads, Impact Stat for results, panels for grouped inputs, Notice for cautions and input errors, Form Fields for inputs (with checked-answer states for quiz-style tools), Balance Chart and Data Table for projected results, and a Calculation Explainer for any rule a student may not know.
 - Money tools compare every plan with paying the card's minimum in a Comparison Callout. When the plan saves money, say how much interest and how many months it saves; when it costs more, say that just as plainly. When a payment is below the issuer's first-month minimum ($25, or 1% of the balance plus interest if greater), show the minimum-payment warning (see Notice).
 - Lay every tool out as a Tool Page: the nav with a "Student tools" link, a tool header, an 860px column of cards, and the footer "A free student tool by Winsome Mundy", linking to winsomemundy.com/tools.

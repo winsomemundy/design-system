@@ -304,6 +304,12 @@
 .wm-role-panel .wm-quote { margin-top: 6px; }
 .wm-surface a.wm-role-panel__link { margin-top: auto; padding-top: 4px; font-family: var(--font-display); font-weight: 500; font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; color: var(--wm-accent); }
 .wm-surface a.wm-role-panel__link:hover { color: var(--text); }
+/* Side by side, the two panels share their rows, so the label, thesis, story, proof cards, quote and link line up across both */
+@supports (grid-template-rows: subgrid) {
+  @media (min-width: 901px) {
+    .wm-role-panel { display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: subgrid; grid-row: span 6; row-gap: 16px; }
+  }
+}
 @media (max-width: 900px) { .wm-roles__grid { grid-template-columns: 1fr; } }
 @media (max-width: 560px) {
   .wm-role-panel { padding: var(--card-pad-sm); }
@@ -317,6 +323,10 @@
 .wm-roles__meet-marks { display: inline-flex; gap: 6px; flex: none; }
 .wm-roles__meet-marks i { width: 8px; height: 8px; background: var(--violet); transform: rotate(45deg); }
 .wm-roles__meet-marks i + i { background: var(--gold); }
+/* The two roles' icons side by side: product layers in violet, the educator's cap in gold */
+.wm-roles__meet-icons { display: inline-flex; gap: 6px; flex: none; }
+.wm-roles__meet-icons svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; color: var(--violet); }
+.wm-roles__meet-icons svg + svg { color: var(--gold); }
 .wm-roles__meet-body { margin: 0; color: var(--muted); }
 @media (max-width: 900px) { .wm-roles__meet { grid-template-columns: 1fr; } }
 @media (max-width: 560px) { .wm-roles__meet { padding: var(--card-pad-sm); } }
