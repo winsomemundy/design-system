@@ -3,7 +3,7 @@
 The top of the home page: the framed portrait and a live headline on the left, the compass art on the right.
 
 ## When to use
-Once, at the top of the home page, directly under the Nav and followed by the Role Panels.
+Once, at the top of the home page, directly under the Nav. On the website it is followed by a short About me intro (eyebrow, the heading "Curious by nature. Analytical by design. Creative by choice.", two `sub` paragraphs and a link to `/about`), then the Role Panels.
 
 ## Markup
 ```
@@ -17,7 +17,7 @@ header.wm-hero
       h1.wm-heading.display-xl (the name)
       p.wm-hero__title.heading-md ("Sr. Technical Product Owner & Educator")
       p.wm-hero__creds.credential ("MSCS • A-CSPO • CSM")
-      p.wm-hero__tagline ("Driving value. Empowering teams. Delivering impact.")
+      p.wm-hero__tagline (optional; the website leaves it out)
       .wm-hero__actions > a.wm-btn.button ("Get in touch") + a.wm-btn.wm-btn--ghost.button ("LinkedIn ↗")
 ```
 
@@ -30,4 +30,4 @@ header.wm-hero
 The three compass images from `assets/Images` and the headshot. Every word is live text; never put text back into the art. The art is decorative, so its `alt` is empty and the picture is hidden from screen readers.
 
 ## Don't
-Widen the text column, add a third button, or place the portrait over the compass.
+Widen the text column, add a third button, or place the portrait over the compass. Don't use the tagline and the About me heading together: two three-part slogans in a row read as filler.
