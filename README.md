@@ -3,7 +3,7 @@
      each components/<Name>/preview.html opens in a browser on its own.
 
      Use in an app (pin a tag; bump it to take updates):
-       npm install github:winsomemundy/design-system#v1.7.4
+       npm install github:winsomemundy/design-system#v1.7.5
        import '@winsomemundy/design-system/tokens.css'
        import '@winsomemundy/design-system/bundle.css'
      and load the fonts from Google Fonts (link below, under Type). -->
@@ -72,7 +72,7 @@ Every color in the system has a hex code above. Use the 8-digit hex for `ink-gla
 
 - **The compass.** The banner's compass appears once, as the Hero's backdrop art. Section eyebrows carry no compass bearings (retired in v1.6.2), and the compass is never used as decoration elsewhere.
 - **The gold rule.** A 36px (`rule-mark`) 1px gold line precedes each eyebrow and is the only horizontal flourish.
-- **The diamond.** A rotated square marks things: violet-filled 9px in win lists, gold-outlined 13px on the timeline spine, and the ◆ glyph before an award.
+- **The diamond.** A rotated square marks things: violet-filled 9px in win lists, gold-outlined 13px on the timeline spine, and the ◆ glyph before an award. The Role Panels' labels and mentoring band carry none; the labels carry an icon instead.
 - **The offset frame.** The portrait sits on a gold hairline frame offset 14px down and to the right.
 
 ## Imagery
@@ -83,8 +83,9 @@ Every color in the system has a hex code above. Use the 8-digit hex for `ink-gla
 
 ## Iconography
 
-- There is no icon set and no logo mark; the wordmark is the name set in `brand`. Do not draw a logo.
-- Use text glyphs only: ↗ after links that open another site, ◆ before awards, · and • as separators. No emoji.
+- There is no logo mark; the wordmark is the name set in `brand`. Do not draw a logo.
+- Icons appear only in the Role Panels: line icons in the Lucide style (24px grid, 2px round strokes, no fill), drawn as inline `svg[aria-hidden]` in the accent color. The set: layers (product), graduation cap (educator), shopping cart, open book, column chart, trophy, people, laptop. Proof icons sit in a 32px accent-tinted circle, the system's one round shape. Lucide icons are ISC-licensed.
+- Everywhere else, use text glyphs only: ↗ after links that open another site, ◆ before awards, · and • as separators. No emoji.
 
 ## Motion
 
@@ -104,7 +105,7 @@ Every color in the system has a hex code above. Use the 8-digit hex for `ink-gla
 
 ## Building a student tool on this system
 
-- Install the system from GitHub, pinned to a release tag (`npm install github:winsomemundy/design-system#v1.7.4`), import `@winsomemundy/design-system/tokens.css` and then `@winsomemundy/design-system/bundle.css`, load the three fonts (link above), and set `<body class="wm-surface">`. Put only the tool's own additions in its stylesheet, loaded after these two. To take a design-system change, release a new tag and bump it in the tool.
+- Install the system from GitHub, pinned to a release tag (`npm install github:winsomemundy/design-system#v1.7.5`), import `@winsomemundy/design-system/tokens.css` and then `@winsomemundy/design-system/bundle.css`, load the three fonts (link above), and set `<body class="wm-surface">`. Put only the tool's own additions in its stylesheet, loaded after these two. To take a design-system change, release a new tag and bump it in the tool.
 - Reuse the `wm-` component classes rather than restyling: Button for actions, Eyebrow and `heading-lg` for section heads, Impact Stat for results, panels for grouped inputs, Notice for cautions and input errors, Form Fields for inputs (with checked-answer states for quiz-style tools), Balance Chart and Data Table for projected results, and a Calculation Explainer for any rule a student may not know.
 - Money tools compare every plan with paying the card's minimum in a Comparison Callout. When the plan saves money, say how much interest and how many months it saves; when it costs more, say that just as plainly. When a payment is below the issuer's first-month minimum ($25, or 1% of the balance plus interest if greater), show the minimum-payment warning (see Notice).
 - Lay every tool out as a Tool Page: the nav with a "Student tools" link, a tool header, an 860px column of cards, and the footer "A free student tool by Winsome Mundy", linking to winsomemundy.com/tools.
