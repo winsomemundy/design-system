@@ -284,14 +284,14 @@
 
 /* Role panels: two side-by-side panels, one per role */
 .wm-roles__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--grid-gap); margin-top: 32px; }
-.wm-role-panel { --wm-accent: var(--violet); --wm-accent-tint: var(--violet-tint); display: flex; flex-direction: column; gap: 16px; padding: var(--card-pad-lg); background: var(--panel); border: var(--hairline) solid var(--line); min-width: 0; }
+.wm-role-panel { --wm-accent: var(--violet); --wm-accent-tint: var(--violet-tint); display: flex; flex-direction: column; gap: 16px; padding: var(--card-pad-sm); background: var(--panel); border: var(--hairline) solid var(--line); min-width: 0; }
 .wm-role-panel--educator { --wm-accent: var(--gold); --wm-accent-tint: var(--gold-tint); }
 .wm-role-panel__label { display: flex; align-items: center; gap: 10px; margin: 0; font-family: var(--font-display); font-weight: 500; font-size: 0.78rem; line-height: 1.4; letter-spacing: 0.2em; text-transform: uppercase; color: var(--wm-accent); }
 .wm-role-panel__thesis { margin: 0; font-family: var(--font-display); font-weight: 600; font-size: clamp(1.35rem, 2.4vw, 1.7rem); line-height: 1.2; color: var(--text); text-wrap: balance; }
 .wm-role-panel__body { margin: 0; color: var(--muted); }
 /* Proof points: three small cards, each with an icon in a tinted circle, a number, a bold title and a line of detail */
-.wm-role-panel__proof { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 4px 0 0; }
-.wm-role-panel__proof > div { container-type: inline-size; display: flex; flex-direction: column; gap: 10px; min-width: 0; padding: 14px; background: var(--night); border: var(--hairline) solid var(--line); }
+.wm-role-panel__proof { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 4px 0 0; }
+.wm-role-panel__proof > div { container-type: inline-size; display: flex; flex-direction: column; gap: 10px; min-width: 0; padding: 12px; background: var(--night); border: var(--hairline) solid var(--line); }
 .wm-role-panel__proof dt { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-family: var(--font-display); font-weight: 600; font-size: 1.4rem; line-height: 1.1; color: var(--wm-accent); font-variant-numeric: tabular-nums; }
 .wm-role-panel__icon { flex: none; display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--wm-accent-tint); color: var(--wm-accent); }
 .wm-role-panel__icon svg, .wm-role-panel__label svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
