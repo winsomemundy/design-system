@@ -18,14 +18,15 @@ header.wm-hero
       p.wm-hero__title.heading-md ("Sr. Technical Product Owner & Educator")
       p.wm-hero__creds.credential ("MSCS • A-CSPO • CSM")
       p.wm-hero__tagline (optional; the website leaves it out)
-      p.wm-hero__intro > strong ("Curious by nature. Analytical by design. Creative by choice.") + one sentence ("I build secure, intuitive products, and I coach the people who build them.")
+      p.wm-hero__intro > strong ("Curious by nature. Analytical by design. Creative by choice.") + br + one sentence on its own line ("I build secure, intuitive products for regulated industries, and coach the people who build them.")
       .wm-hero__actions > a.wm-btn.button ("Get in touch") + a.wm-btn.wm-btn--ghost.button ("LinkedIn ↗") + a.wm-btn.wm-btn--ghost.button ("About me →", to /about)
 ```
 
 ## Layout
-- 1100px and wider: the compass art sits on the right at the hero's full height (about 327px), fading into `night` on its left edge. The left side sets that height: a 150px portrait and a 450px text column with 40px above and below. The column is 450px so the three buttons fit on one row. The compass is about 206px across, matching the portrait's weight; don't make it smaller, and don't let it float shorter than the hero.
-- Below 1100px: the compass becomes a 180px band across the top, fading into `night` on the left (`night` to `night-clear`), with the portrait and text side by side below it.
-- 640px and below: a 160px band, then the portrait and text stacked; buttons share the width below 560px.
+- 1100px and wider: the compass art sits on the right at the hero's full height (about 323px), fading into `night` on its left edge. The text column sets that height: 450px wide, with 28px above and below. The column is 450px so the three buttons fit on one row. The compass is about 206px across, matching the portrait's weight; don't make it smaller, and don't let it float shorter than the hero.
+- Below 1100px: the compass becomes a 140px band across the top, fading into `night` on the left (`night` to `night-clear`), with the portrait and text side by side below it.
+- 640px and below: no compass at all (the art is hidden on phones), then the portrait and text stacked; buttons share the width below 560px.
+- Beside the text (641px and wider), the portrait's top lines up with the top of the capitals in the name, not the top of the heading's line box: it sits 0.22em of the heading size lower.
 
 ## The consumer provides
 The three compass images from `assets/Images` and the headshot. Every word is live text; never put text back into the art. The art is decorative, so its `alt` is empty and the picture is hidden from screen readers.

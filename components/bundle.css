@@ -236,8 +236,9 @@
 /* Hero: portrait and live headline beside the compass art */
 .wm-hero { position: relative; overflow: hidden; background: var(--night); border-bottom: var(--hairline) solid var(--line); }
 .wm-hero__art img { display: block; }
-.wm-hero__content { position: relative; display: grid; grid-template-columns: 150px minmax(0, 450px); gap: 32px; align-items: center; padding-block: 40px; }
-.wm-hero__portrait { margin-right: 14px; }
+.wm-hero__content { position: relative; display: grid; grid-template-columns: 150px minmax(0, 450px); gap: 32px; align-items: start; padding-block: 28px; }
+/* The photo's top lines up with the top of the capitals in the name (0.22em below the heading's line box) */
+.wm-hero__portrait { margin: calc(clamp(2rem, 3.4vw, 2.6rem) * 0.22) 14px 0 0; }
 .wm-hero h1.wm-heading { font-size: clamp(2rem, 3.4vw, 2.6rem); }
 @media (min-width: 641px) { .wm-hero h1.wm-heading { white-space: nowrap; } }
 .wm-hero__title { margin: 8px 0 0; color: var(--text); font-size: 1.2rem; }
@@ -253,13 +254,13 @@
 @media (max-width: 1099px) {
   .wm-hero__art { position: relative; display: block; }
   .wm-hero__art::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--night) 0%, var(--night-clear) 55%); }
-  .wm-hero__art img { width: 100%; height: 180px; object-fit: cover; object-position: 100% 88%; }
-  .wm-hero__content { padding-block: 32px 40px; }
+  .wm-hero__art img { width: 100%; height: 140px; object-fit: cover; object-position: 100% 88%; }
+  .wm-hero__content { padding-block: 28px 32px; }
 }
 @media (max-width: 640px) {
-  .wm-hero__art img { height: 160px; }
-  .wm-hero__content { grid-template-columns: 1fr; gap: 28px; padding-block: 28px 40px; }
-  .wm-hero__portrait { width: min(170px, 55%); }
+  .wm-hero__art { display: none; }
+  .wm-hero__content { grid-template-columns: 1fr; gap: 24px; padding-block: 28px 36px; }
+  .wm-hero__portrait { width: min(170px, 55%); margin-top: 0; }
 }
 @media (max-width: 560px) { .wm-hero__actions .wm-btn { flex: 1 1 auto; justify-content: center; } }
 
