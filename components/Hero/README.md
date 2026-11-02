@@ -15,7 +15,7 @@ header.wm-hero
     figure.wm-portrait.wm-hero__portrait > img (headshot.jpg)
     .wm-hero__text
       h1.wm-heading.display-xl (the name)
-      p.wm-hero__title.heading-md ("Sr. Technical Product Owner & Educator")
+      p.wm-hero__title.heading-md ("Senior Technical Product Owner & Educator")
       p.wm-hero__creds.credential ("MSCS • A-CSPO • CSM")
       p.wm-hero__tagline (optional; the website leaves it out)
       p.wm-hero__intro > strong ("Curious by nature. Analytical by design. Creative by choice.") + br + one sentence on its own line ("I deliver secure, intuitive products for regulated industries, and coach the people who build them.")

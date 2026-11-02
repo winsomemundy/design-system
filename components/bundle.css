@@ -304,6 +304,9 @@
 .wm-role-panel .wm-quote { margin-top: 6px; }
 .wm-surface a.wm-role-panel__link { margin-top: auto; padding-top: 4px; font-family: var(--font-display); font-weight: 500; font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; color: var(--wm-accent); }
 .wm-surface a.wm-role-panel__link:hover { color: var(--text); }
+/* One or two links at the foot of a panel, side by side */
+.wm-role-panel__links { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: auto 0 0; padding-top: 4px; }
+.wm-role-panel__links .wm-role-panel__link { margin-top: 0; padding-top: 0; }
 /* Side by side, the two panels share their rows, so the label, thesis, story, proof cards, quote and link line up across both */
 @supports (grid-template-rows: subgrid) {
   @media (min-width: 901px) {
